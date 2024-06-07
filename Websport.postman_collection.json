@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "1327fff1-92fa-48f3-b6cf-34b80668da99",
+		"name": "Websport",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35159127"
+	},
+	"item": [
+		{
+			"name": "test signup",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Kiểm tra mã trạng thái HTTP là 201 (Created)\r",
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"// Kiểm tra thời gian phản hồi ít hơn 200ms\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "hoanghuy2",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "huy",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "huyhoang@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/PHP/SignUp.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"PHP",
+						"SignUp.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "hoanghuy2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/PHP/Login.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"PHP",
+						"Login.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test create program",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Kiểm tra mã trạng thái HTTP là 200 (OK) hoặc 302 (Redirect)\r",
+							"pm.test(\"Status code is 200 or 302\", function () {\r",
+							"    pm.response.to.have.status(200) || pm.response.to.have.status(302);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"// Kiểm tra thời gian phản hồi ít hơn 200ms\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Sample Program",
+							"type": "text"
+						},
+						{
+							"key": "sport",
+							"value": "Football",
+							"type": "text"
+						},
+						{
+							"key": "program",
+							"value": "League",
+							"type": "text"
+						},
+						{
+							"key": "createProgram",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/PHP/programs.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"PHP",
+						"programs.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
