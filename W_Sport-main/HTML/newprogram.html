@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/newprogram.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">New Program</div>
+        <div class="create_program">
+            <form action="" id="new_program" method="post">
+                <div class="input_program">
+                    <label for="title">Title</label>
+                    <input class="inp_program" type="text" id="title" required="required" placeholder="Enter your Title" name="title">
+                </div>
+    
+                <div class="input_program">
+                    <label for="sport">Sport</label>
+                    <select id="sport" name="sportlist" form="sportform">
+                        <option value="VolleyBall">VolleyBall</option>
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                    </select>
+                </div>
+    
+                <div class="input_program">
+                    <label for="program">Type of Program</label>
+                    <select id="program" name="programlist" form="programform">
+                        <option value="Tounament">Tounament</option>
+                        <option value="a">League</option>
+                        <option value="b">Camp</option>
+                        <option value="c">Class</option>
+                        <option value="c">Training</option>
+                        <option value="c">Event</option>
+                        <option value="c">Club</option>
+                    </select>
+                </div>
+    
+                <!--Submit-->
+                <div class="input_program submit">
+                    <input type="submit" name="" id="submit-btn" value="Create">
+                </div>
+    
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

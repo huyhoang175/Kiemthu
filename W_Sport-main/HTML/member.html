@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members</title>
+    <link rel="stylesheet" href="../css/member.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">Members</div>
+        <div class="items">
+            <form action="" method="post" class="form-item">
+                <input class="search" type="text" placeholder="Search">
+                <select id="lastest" name="sportlist" form="sportform">
+                    <option value="Sport">Lastest</option>
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                </select>
+
+                <input id="btn" type="button" value="Add Member">
+            </form>
+            
+        </div>
+
+        <div class="container">
+            <div class="profile">
+                <img src="../img/profile-icon-design-free-vector.jpg" alt="Profile Picture">
+            </div>
+            <div class="info">
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> johndoe@example.com</p>
+                <p><strong>Phone:</strong> +123456789</p>
+                <p><strong>Join Date:</strong> January 1, 2020</p>
+                <div class="more-info">
+                    <p><strong>Address:</strong> 123 Main St, City</p>
+                    <p><strong>Country:</strong> Country</p>
+                    <p><strong>Age:</strong> 30</p>
+                </div>
+                <p class="more-link" onclick="toggleMore()">More...</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("btn").addEventListener("click", function() {
+            window.location.href = "../html/new_mem.html";
+        });
+    </script>
+</body>
+</html>

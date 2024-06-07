@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Organization</title>
+    <link rel="stylesheet" href="../css/search_organization.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-item">
+                <div class="logo">
+                    <a href="index.html" class="logo-title"> 
+                        <h2 title="Sport Management">SportManagement</h2>
+                    </a>
+                </div>
+    
+                <!--khi da dang nhap, hien thi profile-->
+                <div class="nav_profile">
+                    <div class="dashboard">
+                        <p class="goto"><a href="../html/itemmenu.html">Go to Dashboard</a></p>
+                        <p><img src="../img/profile.jpg" alt=""></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="header">Search Public Organization</div>
+        <div class="items">
+            <form action="" method="post" class="form-item">
+                <input class="search" type="text" placeholder="Search">
+                <select id="selec_organization" name="sportlist" form="sportform">
+                    <option value="organization">Organization</option>
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                </select>
+                <div class="showResult">
+                    <p>2 results</p>
+                </div>
+            </form>
+            
+        </div>
+        <div class="container">
+            <div class="info">
+                <p class="organ_name">King Ash</p>
+                <p class="organ_address">Ha Noi, Viet Nam</p>
+                <p class="organ_title">Manager by <span class="author">Le Ngoc A</span></p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="info">
+                <p class="organ_name">Football Lien Mac Club</p>
+                <p class="organ_address">Ha Noi, Viet Nam</p>
+                <p class="organ_title">Manager by <span class="author">Le Quang B</span></p>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

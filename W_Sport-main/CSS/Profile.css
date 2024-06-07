@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    display: block;
+    font-family: ui-sans-serif,system-ui,sans-serif;
+    width: 1260px;
+    margin: 0 auto;
+}
+.navbar {
+    width: 100%;
+}
+
+.navbar-content .navbar-item{
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: space-between;
+}
+.navbar-item .logo h2{
+    color: #17bf63;
+}
+.navbar-item .items{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*main*/
+
+.main-content{
+    display: flex;
+    padding: 15px;
+    background: #f7fafc;
+}
+.main-content .profile-icon{
+    width: 30%;
+    padding-left: 15px;
+}
+.main-content .profile-icon .img_items{
+    padding-left: 50px;
+}
+.main-content img{
+    width: 70%;
+}
+.icon-content .username{
+    font-weight: bold;
+}
+
+.profile-content{
+    width: 60%;
+    padding-left: 15px;
+
+}
+
+#form-profile{
+    max-width: 100%;
+    flex-grow: 1;
+}
+.input-profile{
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.input-profile label{
+    font-weight: 500;
+}
+.inp_profile{
+    padding: 5px;
+}
+.pr_gender select#choose_gender{
+    padding: 5px;
+    appearance: none;
+}
+.submit{
+    margin-bottom: 16px;
+}
+
+input#submit-btn {
+    background: #17bf63;
+    color: white;
+    border: 0 #17bf63;
+    padding: 5px 5px;
+    
+}
+input#submit-btn:hover{
+    background: #0f8f53;
+}
+  

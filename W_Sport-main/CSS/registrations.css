@@ -1,0 +1,259 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    list-style: none;
+}
+  
+body{
+    background-color: #f3f5f9;
+    width: 100%;
+    max-width: 1360px; 
+    margin: 0 auto;
+}
+ 
+/*nav*/
+.navbar {
+  width: 100%;
+  box-shadow: 5px 5px 5px rgb(210, 208, 208);
+  position: fixed; 
+  top: 0; 
+  z-index: 10000; 
+  background-color: white;
+}
+  
+  .navbar-content .navbar-item{
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+  }
+  .navbar-item .logo h2{
+    color: #17bf63;
+  }
+  .navbar-item .items{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .navbar-item .items a.sign_in{
+    font-weight: 500;
+    /* background: white; */
+    color: #718096;
+    padding: 5px 15px 0 20px;
+    font-size: 15px;
+  }
+  .navbar-item .items a.sign_in:hover{
+    color: red;
+    text-decoration: underline;
+  
+  }
+  .navbar-item .items a.sign_up{
+    font-weight: 500;
+    /* background-color: #17bf63; */
+    padding: 5px 20px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+  }
+  .navbar-item .items a.sign_up:hover{
+    background-color: #0f8f53;
+  }
+  
+  .user-avatar {
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+
+/*wrapper*/
+.wrapper{
+    display: flex;
+    position: relative;
+    height: 500px;
+  }
+  
+  .wrapper .sidebar{
+    width: 200px;
+    height: 100%;
+    background: #a9f3a5;
+    padding: 65px 0px;
+    position: fixed;
+    padding-top: 150px;
+  }
+  
+  
+  
+  .wrapper .sidebar ul li{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }    
+  
+  .wrapper .sidebar ul li a{
+    color: black;
+    display: block;
+  }
+  
+  .wrapper .sidebar ul li a .fas{
+    width: 25px;
+  }
+  
+  .wrapper .sidebar ul li:hover{
+    background-color: rgb(216, 211, 211);
+  }
+      
+  .wrapper .sidebar ul li:hover a{
+    color: #fff;
+  }
+   
+  .wrapper .sidebar .social_media{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .wrapper .sidebar .social_media a{
+    display: block;
+    width: 40px;
+    background: #594f8d;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+    margin: 0 5px;
+    color: #bdb8d7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .wrapper .main_content{
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    background: #fff;
+    background: #fff;
+    padding-top: 100px;
+  }
+  
+  .wrapper .main_content .header{
+    padding: 20px;
+    background: #fff;
+    color: #717171;
+    border-bottom: 1px solid #e0e4e8;
+  }
+  
+  .wrapper .main_content .info{
+    color: #717171;
+    line-height: 25px;
+}
+
+
+
+/*main*/
+.main{
+    width: 100%;
+    height: 100%;
+}
+.main .header{
+    padding: 20px;
+    width: 100%;
+    background: #fff;
+    color: black;
+    border-bottom: 1px solid #e0e4e8;
+    font-weight: bold;
+    font-size: 25px;
+}
+  
+.main .info{
+    margin-left: 20px;
+}
+
+.main .items{
+    padding-top: 20px;
+    /* height: 400px; */
+    background: #fff;
+}
+.main .items form .search,
+.main .items form #sport,
+.main .items form #all,
+.main .items form #btn{
+    height: 30px;
+    margin: 10px;
+}
+.main .items form .search{
+    width: 180px;
+}
+.main .items form #sport,
+.main .items form #all{
+    width: 130px;
+}
+
+
+.container {
+    width: 50%;
+    margin: 20px 8px;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+}
+
+.profile {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.profile img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.info {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.info_mem{
+    display: flex;
+}
+.info_mem p{
+    padding-right: 10px;
+    color: blue;
+}
+.info_mem p.active{
+    color: yellow;
+}
+
+.more-info {
+    display: none;
+}
+
+.more-link {
+    cursor: pointer;
+    color: blue;
+}
+
+.more-link:hover {
+    text-decoration: underline;
+}
+
+form input.del{
+  background-color: #0f8f53;
+  padding: 10px ;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+}
+form input.del:hover{
+  background-color: green;
+}

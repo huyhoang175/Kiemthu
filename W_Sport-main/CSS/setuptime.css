@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+  
+
+.main .create_web{
+    padding-left: 250px;
+    padding-top: 15px;
+    height: 400px;
+    background: #fff;
+    
+}
+#new_web{
+    max-width: 50%;
+    flex-grow: 1;
+}
+.input_web{
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_web .note{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.inp_program{
+    height: 30px;
+    border: 1px solid gray;
+    padding: 0 6px;
+}
+
+.input_web label{
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-size: 13px;
+    color: gray;
+}
+
+
+.submit{
+    margin-bottom: 16px;
+}
+
+input#submit-btn {
+    background: #17bf63;
+    color: white;
+    border: 0 #17bf63;
+    padding: 5px 5px;
+    border-radius: 5px;
+    
+}
+input#submit-btn:hover{
+    background: #0f8f53;
+}

@@ -1,0 +1,97 @@
+
+.main{
+    width: 80%;
+    padding-left: 150px;
+    padding-top: 15px;
+    
+}
+.main .header{
+    padding: 20px 0px 0px 8px;
+    background: #fff;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+}
+  
+.main .info{
+    margin-left: 20px;
+}
+
+.main .items{
+    padding-top: 20px;
+    background: #fff;
+}
+.main .items form .search,
+.main .items form #sport,
+.main .items form #all,
+.main .items form #btn{
+    height: 30px;
+    margin: 10px;
+}
+.main .items form .search{
+    width: 180px;
+}
+.main .items form #sport,
+.main .items form #all{
+    width: 130px;
+}
+.main .items form #btn{
+    background: #17bf63;
+    color: white;
+    border: 1px solid #17bf63;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 24px;
+}
+.main .items form #btn:hover {
+    background-color: green; /* Màu nền khi di chuột qua */
+}
+.items .showResult{
+    padding-left: 10px;
+}
+
+.container {
+    margin: 20px 9px;
+    display: flex;
+    /* justify-content: flex-start; */
+    border: 1px solid #ccc;
+    box-shadow: 8px 8px 8px 2px rgba(36, 33, 33, 0.1);
+    cursor: pointer;
+    width: 70%;
+    position: relative;
+}
+
+.profile {
+    width: 50%;
+}
+
+.profile img {
+    width: 235px;
+    height: 128px;
+    position: absolute;
+}
+
+.info {
+    width: 90%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.info .program_name{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.info .program_title{
+    font-size: 15px;
+    color: black;
+    padding-top: 10px;
+}
+.info .program_organ{
+    font-size: 18px;
+    color: #17bf63;
+}
+.info .program_address{
+    font-size: 18px;
+    color: gray;
+}
+

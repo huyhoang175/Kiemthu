@@ -1,0 +1,74 @@
+.navbar {
+    width: 100%;
+    box-shadow: 5px 5px 5px rgb(210, 208, 208);
+    position: fixed; /* Navbar giữ nguyên khi cuộn trang */
+    top: 0; /* Đặt navbar ở trên cùng của trang */
+    z-index: 10000; /* Đảm bảo navbar hiển thị trên tất cả các phần khác */
+    background-color: white;
+  }
+  
+  .navbar-content .navbar-item {
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .navbar-item .logo h2 {
+    color: #17bf63;
+  }
+  
+  .navbar-item .items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .navbar-item .items a.sign_in {
+    font-weight: 500;
+    color: #718096;
+    padding: 5px 15px 0 20px;
+    font-size: 15px;
+  }
+  
+  .navbar-item .items a.sign_in:hover {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  .navbar-item .items a.sign_up {
+    font-weight: 500;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+  }
+  
+  .navbar-item .items a.sign_up:hover {
+    background-color: #0f8f53;
+  }
+  
+  .user-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  
+  .wrapper .sidebar{
+    width: 200px;
+    height: 100%;
+    background: #a9f3a5;
+    padding: 65px 0px;
+    position: fixed;
+    padding-top: 150px;
+  }
+  
+  .wrapper .main_content{
+    width: 100%;
+    margin-left: 200px;
+    background: #fff;
+    padding-top: 100px;
+  }

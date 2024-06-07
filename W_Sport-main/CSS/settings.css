@@ -1,0 +1,45 @@
+.name_programs{
+    background: #940000;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgb(140, 145, 149);
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    opacity: 70%;
+}
+
+.menu_setting {
+    background-color: #fff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.menu_setting ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu_setting ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu_setting ul li a {
+    color: #333;
+    text-decoration: none;
+    padding-bottom: 5px; 
+    border-bottom: 2px solid transparent; 
+}
+.menu_setting ul li a:hover {
+    border-bottom-color: #17bf63; 
+}
+.menu_setting ul li a.active {
+    border-bottom-color: #17bf63; 
+    color: #17bf63;
+}
+
+/* iframe {
+    width: 100%;
+    height: 1000px;
+    border: none;
+    overflow: hidden;
+} */

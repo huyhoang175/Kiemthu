@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile và Schedule</title>
+<style>
+    .content {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    .tab {
+        cursor: pointer;
+        margin-right: 10px;
+    }
+</style>
+</head>
+<body>
+
+<span class="tab" onclick="showContent('profile')">Profile</span>
+<span class="tab" onclick="showContent('schedule')">Schedule</span>
+
+<div id="profileContent" class="content">
+    <h2>Thông tin Profile</h2>
+    <p>Đây là nội dung của profile.</p>
+</div>
+
+<div id="scheduleContent" class="content">
+    <h2>Lịch trình Schedule</h2>
+    <p>Đây là nội dung của schedule.</p>
+</div>
+
+<script>
+function showContent(contentId) {
+    var contents = document.getElementsByClassName("content");
+    for (var i = 0; i < contents.length; i++) {
+        contents[i].classList.remove("active");
+    }
+    document.getElementById(contentId + "Content").classList.add("active");
+}
+</script>
+
+</body>
+</html>
